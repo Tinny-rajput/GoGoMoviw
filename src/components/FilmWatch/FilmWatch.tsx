@@ -110,7 +110,7 @@ const FilmWatch: FunctionComponent<FilmWatchProps & getWatchReturnedType> = ({
             className="h-10 w-10 rounded-full object-cover"
           />
           <p className="text-xl text-white font-medium tracking-wider uppercase">
-            Moon<span className="text-primary">light</span>
+            GoGo<span className="text-primary">Moviw</span>
           </p>
         </Link>
         <button onClick={() => setIsSidebarActive((prev) => !prev)}>
@@ -250,6 +250,19 @@ const FilmWatch: FunctionComponent<FilmWatchProps & getWatchReturnedType> = ({
                   : currentEpisode?.overview}
               </ReadMore>
             )}
+            {media_type === "tv" && (
+            <div className="md:mt-24 mt-0">
+              <p className="mb-6 text-xl font-medium flex justify-between items-center">
+                <span className="text-white">Seasons:</span>
+                <BsThreeDotsVertical size={20} />
+              </p>
+              <SeasonSelection
+                detailSeasons={detailSeasons}
+                seasonId={seasonId}
+                episodeId={episodeId}
+              />
+            </div>
+          )}
           </div>
           <Comment media_type={media_type} id={detail?.id} />
         </div>
@@ -264,19 +277,7 @@ const FilmWatch: FunctionComponent<FilmWatchProps & getWatchReturnedType> = ({
               className="md:mt-24 mt-0"
             />
           )}
-          {media_type === "tv" && (
-            <div className="md:mt-24 mt-0">
-              <p className="mb-6 text-xl font-medium flex justify-between items-center">
-                <span className="text-white">Seasons:</span>
-                <BsThreeDotsVertical size={20} />
-              </p>
-              <SeasonSelection
-                detailSeasons={detailSeasons}
-                seasonId={seasonId}
-                episodeId={episodeId}
-              />
-            </div>
-          )}
+          
         </div>
       </div>
       <Footer />
