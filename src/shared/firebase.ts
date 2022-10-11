@@ -22,6 +22,15 @@ const firebaseConfig = {
   measurementId: "G-DJHSVEXKZ9"
 };
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyC5V0Pm-YJV9h0kyX9aBgrKrs3_J3R2Foo",
+//   authDomain: "pvt-comments.firebaseapp.com",
+//   databaseURL: "https://pvt-comments-default-rtdb.firebaseio.com",
+//   projectId: "pvt-comments",
+//   storageBucket: "pvt-comments.appspot.com",
+//   messagingSenderId: "700353567702",
+//   appId: "1:700353567702:web:f36bbbae9c78ac1e3ea277",
+// };
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
