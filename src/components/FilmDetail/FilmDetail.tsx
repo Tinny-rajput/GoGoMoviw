@@ -106,7 +106,7 @@ const FilmDetail: FC<FilmInfo> = ({ similar, videos, detail, ...others }) => {
         <Title
           value={`${
             (detail as DetailMovie).title || (detail as DetailTV).name
-          } | Moonlight`}
+          } | GoGoMoviw`}
         />
       )}
 
@@ -117,7 +117,7 @@ const FilmDetail: FC<FilmInfo> = ({ similar, videos, detail, ...others }) => {
             className="h-10 w-10 rounded-full object-cover"
           />
           <p className="text-xl text-white font-medium tracking-wider uppercase">
-            Moon<span className="text-primary">light</span>
+            GoGo<span className="text-primary">Moviw</span>
           </p>
         </Link>
         <button onClick={() => setIsSidebarActive((prev) => !prev)}>
@@ -302,6 +302,7 @@ const FilmDetail: FC<FilmInfo> = ({ similar, videos, detail, ...others }) => {
                 </div>
               </div>
             )}
+            
 
             <div className="flex-grow min-h-[500px] md:border-r border-dark-lighten md:px-16 px-5 md:py-7 pt-40">
               {/* {!detail && <Skeleton className="w-full h-[500px]" />} */}
