@@ -24,8 +24,8 @@ const Search: FunctionComponent<SearchProps> = () => {
   const [currentTab, setCurrentTab] = useState("multi");
   return (
     <>
-      {!query && <Title value="Search | Moonlight" />}
-      {query && <Title value={`Search: ${query} | Moonlight`} />}
+      {!query && <Title value="Search | GoGoMoviw" />}
+      {query && <Title value={`Search: ${query} | GoGoMoviw`} />}
 
       <div className="flex md:hidden justify-between items-center px-5 my-5">
         <Link to="/" className="flex gap-2 items-center">
@@ -34,7 +34,7 @@ const Search: FunctionComponent<SearchProps> = () => {
             className="h-10 w-10 rounded-full object-cover"
           />
           <p className="text-xl text-white font-medium tracking-wider uppercase">
-            Moon<span className="text-primary">light</span>
+            GoGo<span className="text-primary">Moviw</span>
           </p>
         </Link>
         <button onClick={() => setIsSidebarActive((prev) => !prev)}>
