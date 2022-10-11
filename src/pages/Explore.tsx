@@ -93,7 +93,7 @@ const Explore: FunctionComponent<ExploreProps> = () => {
   }, [location.search]);
   return (
     <>
-      <Title value={"Explore | Moonlight"} />
+      <Title value={"Explore | GoGoMoviw"} />
       {isShowScrollUpBtn && (
         <button
           onClick={scrollToTop}
@@ -115,7 +115,7 @@ const Explore: FunctionComponent<ExploreProps> = () => {
             className="h-10 w-10 rounded-full object-cover"
           />
           <p className="text-xl text-white font-medium tracking-wider uppercase">
-            Moon<span className="text-primary">light</span>
+            GoGo<span className="text-primary">Moviw</span>
           </p>
         </Link>
         <button onClick={() => setIsSidebarActive((prev) => !prev)}>
