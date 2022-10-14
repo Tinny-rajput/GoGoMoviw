@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore} from "firebase/firestore";
 
 // const app = initializeApp({
 //   apiKey: process.env.REACT_APP_apiKey,
@@ -12,12 +13,13 @@ import { getFirestore } from "firebase/firestore";
 // });
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBiO4NTttc68zMHFkRFXyK5qLsU9zXsJmg",
-  authDomain: "moonlight-40ecf.firebaseapp.com",
-  projectId: "moonlight-40ecf",
-  storageBucket: "moonlight-40ecf.appspot.com",
-  messagingSenderId: "1043878072437",
-  appId: "1:1043878072437:web:0fd78f6e64f3cfbe2d283c",
+ apiKey: "AIzaSyBtfIyEIBXz3xn_AX_vEPcoeni55d5QU00",
+  authDomain: "gogomoviw-7850d.firebaseapp.com",
+  projectId: "gogomoviw-7850d",
+  storageBucket: "gogomoviw-7850d.appspot.com",
+  messagingSenderId: "932308925123",
+  appId: "1:932308925123:web:19f14b22375c5682fdc076",
+  measurementId: "G-DJHSVEXKZ9"
 };
 
 // const firebaseConfig = {
@@ -36,3 +38,4 @@ export const db = getFirestore(app);
 //   experimentalForceLongPolling: true,
 // });
 export const auth = getAuth(app);
+const analytics = getAnalytics(app);
