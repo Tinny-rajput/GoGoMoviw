@@ -13,13 +13,13 @@ import { getFirestore} from "firebase/firestore";
 // });
 
 const firebaseConfig = {
- apiKey: "AIzaSyBLcBR8pVpMoLE7w5u8qOazZYjqBBaaIJc",
-  authDomain: "gogomoviw2.firebaseapp.com",
-  projectId: "gogomoviw2",
-  storageBucket: "gogomoviw2.appspot.com",
-  messagingSenderId: "76541907181",
-  appId: "1:76541907181:web:3f36623f3653dca2effce4",
-  measurementId: "G-DHVZJEYG3Y"
+  apiKey: "AIzaSyBtfIyEIBXz3xn_AX_vEPcoeni55d5QU00",
+  authDomain: "gogomoviw-7850d.firebaseapp.com",
+  projectId: "gogomoviw-7850d",
+  storageBucket: "gogomoviw-7850d.appspot.com",
+  messagingSenderId: "932308925123",
+  appId: "1:932308925123:web:19f14b22375c5682fdc076",
+  measurementId: "G-DJHSVEXKZ9"
 };
 
 // const firebaseConfig = {
