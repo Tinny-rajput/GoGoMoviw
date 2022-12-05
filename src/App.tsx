@@ -124,7 +124,6 @@ function App() {
   );
 }
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9588370510314362"
-     crossorigin="anonymous"></script>
+
 
 export default App;
