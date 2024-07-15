@@ -23,7 +23,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
             <AiFillGithub size={25} />
           </a>
           <a
-            href="https://www.instagram.com/tinny_rajput56"
+            href="https://www.instagram.com/Harsh__rajput56"
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary transition duration-300"
